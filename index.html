@@ -1,49 +1,68 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Fundamentals Assignment</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Fundamentals Assignment</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
     <h1>JavaScript Fundamentals Assignment</h1>
+    <p>A demonstration of variables, conditionals, functions, loops, and DOM manipulation.</p>
+  </header>
 
-    <!-- Part 1: User Input -->
-    <section id="part1">
-        <h2>Part 1: JS Basics</h2>
-        <p>Enter your age:</p>
-        <input type="number" id="ageInput" placeholder="Your age">
-        <button id="checkAgeBtn">Check Age</button>
-        <p id="ageResult"></p>
+  <main>
+    <!-- Part 1: Basics -->
+    <section>
+      <h2>Part 1: Basics</h2>
+      <p>Enter your age to check if you are an adult:</p>
+      <input type="number" id="ageInput" placeholder="Enter age">
+      <button id="checkAgeBtn">Check</button>
+      <p id="ageResult"></p>
     </section>
 
     <!-- Part 2: Functions -->
-    <section id="part2">
-        <h2>Part 2: Functions</h2>
-        <p>Calculate total price:</p>
-        <input type="number" id="priceInput" placeholder="Price">
-        <input type="number" id="quantityInput" placeholder="Quantity">
-        <button id="calcTotalBtn">Calculate Total</button>
-        <p id="totalResult"></p>
+    <section>
+      <h2>Part 2: Functions</h2>
+      <p>Calculate total price:</p>
+      <input type="number" id="priceInput" placeholder="Price">
+      <input type="number" id="quantityInput" placeholder="Quantity">
+      <button id="calcBtn">Calculate</button>
+      <p id="calcResult"></p>
     </section>
 
     <!-- Part 3: Loops -->
-    <section id="part3">
-        <h2>Part 3: Loops</h2>
-        <button id="showNumbersBtn">Show Numbers 1-10</button>
-        <ul id="numberList"></ul>
+    <section>
+      <h2>Part 3: Loops</h2>
+      <button id="listNumbersBtn">List Numbers from 1 to 10</button>
+      <ul id="numberList"></ul>
     </section>
 
     <!-- Part 4: DOM Manipulation -->
-    <section id="part4">
-        <h2>Part 4: DOM Manipulation</h2>
-        <button id="toggleThemeBtn">Toggle Theme</button>
-        <p id="themeText">This is some text that will change color.</p>
-        <button id="addItemBtn">Add Item</button>
-        <ul id="dynamicList"></ul>
+    <section>
+      <h2>Part 4: DOM Manipulation</h2>
+      <button id="toggleThemeBtn">Toggle Theme</button>
+      <p id="themeText">Click this text to change its color.</p>
+      <button id="addItemBtn">Add List Item</button>
+      <ul id="dynamicList"></ul>
     </section>
 
-    <script src="script.js"></script>
+    <!-- Bonus Feature -->
+    <section>
+      <h2>Extra: Guess the Number Game</h2>
+      <p>Guess a number between 1 and 10:</p>
+      <input type="number" id="guessInput" placeholder="Enter guess">
+      <button id="guessBtn">Submit Guess</button>
+      <p id="guessResult"></p>
+      <button id="resetBtn">Reset Game</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Developed as part of a JavaScript fundamentals assignment.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
